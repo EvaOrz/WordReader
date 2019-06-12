@@ -1,4 +1,4 @@
-package com.sunvote.myapplication;
+package com.sunvote.myapplication.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.sunvote.myapplication.R;
 
 import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.usermodel.Bookmark;
@@ -64,8 +66,6 @@ public class MainActivity extends Activity {
 
     public void testReadByDoc() {
         try {
-
-
             InputStream is = new FileInputStream(PATH);
             HWPFDocument doc = new HWPFDocument(is);
             //输出书签信息
